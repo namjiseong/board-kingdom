@@ -1,2 +1,2 @@
-# dicegame
-주사위 게임 레포
+# board kingdom
+1. 각자 한거 업로드 후 합치기
