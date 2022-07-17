@@ -28,23 +28,27 @@ public class Playermove : MonoBehaviour
             {
                 animator.SetInteger("Direction", 3);
                 transform.Translate(new Vector2(-1 * pace, 0));
+                action--;
             }
             if (Input.GetKeyDown(KeyCode.D) && moveD == true)
             {
                 animator.SetInteger("Direction", 2);
                 transform.Translate(new Vector2(1 * pace, 0));
+                action--;
             }
             if (Input.GetKeyDown(KeyCode.W) && moveW == true)
             {
                 animator.SetInteger("Direction", 1);
                 transform.Translate(new Vector2(0, 1 * pace));
+                action--;
             }
             if (Input.GetKeyDown(KeyCode.S) && moveS == true)
             {
                 animator.SetInteger("Direction", 0);
                 transform.Translate(new Vector2(0, -1 * pace));
+                action--;
             }
-            action--;
+            
         }
         else  //Çàµ¿·Â 0
         {
