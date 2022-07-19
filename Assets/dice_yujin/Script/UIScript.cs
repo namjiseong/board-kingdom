@@ -6,9 +6,11 @@ public class UIScript : MonoBehaviour
 {
     public GameObject MainUI;
     public GameObject SettingsUI;
+    public GameObject StageUI;
     public void OnClickNewGame()
     {
         MainUI.SetActive(false);
+        StageUI.SetActive(true);
         //ªı ∞‘¿”
     }
     public void OnClickLoad()
